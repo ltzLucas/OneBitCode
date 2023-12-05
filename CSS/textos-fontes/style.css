@@ -1,0 +1,33 @@
+header{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+h2{
+    letter-spacing: 8px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+.OpenSans{
+    font-family: 'Open Sans', sans-serif;
+}
