@@ -1,6 +1,7 @@
 const baralho = []
 let opcao = ""
 
+
 do {
   opcao = prompt(
     "Cartas no baralho: " + baralho.length +
