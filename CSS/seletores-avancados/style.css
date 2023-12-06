@@ -1,0 +1,47 @@
+li:nth-child(2){
+    color: rgb(174, 0, 255);
+}
+
+li:nth-child(3n){
+    color: #00f;
+}
+
+/* Impar */
+/* li:nth-child(odd){
+    color: rgb(255, 30, 0);
+} */
+
+/* Passar o mouse em cima ele muda */
+li:hover{
+    background-color: #777;
+    color: #fff;
+}
+
+input:focus{
+    background-color: #232332;
+    color: #fff;
+}
+
+/* pseudo-elementos-> ::before e ::after */
+
+li::before{
+    content: "(antes) ";
+    color: #0f0;
+    font-size: 2rem;
+}
+
+li::after{
+    content: " (depois)";
+}
+
+li:first-child{
+    background-color: #777;
+}
+
+li:last-child{
+    background-color: rgb(199, 202, 24);
+}
+
+li:not(:first-child){
+    color: #00f;
+}
