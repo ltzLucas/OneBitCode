@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="">
+        <header>
+            <h1>Jogo da velha</h1>
+            <p>Insira os nomes dos jogadores e aperte em começar</p>
+            <hr>
+        </header>
+        <section class="names">
+            <label for="player1">Jogador 1</label>
+            <input type="text" id="player1">
+            <br>
+            <label for="player2">Jogador 2</label>
+            <input type="text" id="player2">
+            <br>
+            <button onclick="starGame()">Começar</button>
+        </section>
+        
+        <div class="board" id="board">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        
+    </main>
+    <div class="game-end-message" id="gameEndElement">
+        <div data-game-end-message>O x venceu</div>
+        <button id="restartButton">Reiniciar</button>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
