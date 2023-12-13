@@ -18,12 +18,17 @@
         </header>
         <section class="names">
             <label for="player1">Jogador 1</label>
-            <input type="text" id="player1">
+            <br>
+            <input type="text" id="player1" class="players">
             <br>
             <label for="player2">Jogador 2</label>
-            <input type="text" id="player2">
             <br>
-            <button onclick="starGame()">Começar</button>
+            <input type="text" id="player2" class="players">
+            <br>
+            <p class="message-error-players"></p>
+            <div class="flex">
+                <button onclick="starGame()">Começar</button>
+            </div>
         </section>
         
         <div class="board" id="board">

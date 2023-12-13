@@ -164,3 +164,31 @@ main.end {
 .game-end-message.show{
     display: flex;
 }
+
+.message-error-players {
+    color: #B02732;
+    font-size: small;
+}
+
+.players {
+    background-color: #353542;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.names {
+    width: 13rem;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.flex > button{
+    background-color: #353542 ;
+    border-radius: 1rem;
+    padding: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}

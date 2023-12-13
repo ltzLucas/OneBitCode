@@ -12,6 +12,10 @@ const gameEndElement = document.querySelector('#gameEndElement')
 
 const restartButton = document.querySelector('#restartButton')
 
+const messageError = document.querySelector('.message-error-players')
+
+const players = document.querySelectorAll('.players')
+
 const lines = [
     [0,1,2],
     [3,4,5],
@@ -26,21 +30,30 @@ const lines = [
 
 
 function starGame() {
-    xTurn = true
-    board.classList.add('x')
-    gameEndElement.classList.remove('show')
+    if(validatePlayers()) {
+        messageError.innerText = ''
+        xTurn = true
+        board.classList.add('x')
+        gameEndElement.classList.remove('show')
     
+        
+    
+        cells.forEach(cell =>{
+            cell.classList.remove(xClass)
+            cell.classList.remove(oClass)
+            board.classList.replace('o','x')
+    
+            cell.addEventListener('click', handleClick,{once: true})
+        })
+    
+        restartButton.addEventListener('click',starGame)
+        document.querySelector('main').classList.remove('end')
 
-    cells.forEach(cell =>{
-        cell.classList.remove(xClass)
-        cell.classList.remove(oClass)
-        board.classList.replace('o','x')
+    }else {
+        messageError.innerText = "Preencha os campos de jogadores"
+    }
 
-        cell.addEventListener('click', handleClick,{once: true})
-    })
-
-    restartButton.addEventListener('click',starGame)
-    document.querySelector('main').classList.remove('end')
+    
 }
 
 
@@ -93,7 +106,7 @@ function endGame(draw){
     if(draw) {
         gameEndMessage.innerText = "Empate!"
     }else{
-        gameEndMessage.innerText = `${xTurn ? "X" : "O"} Venceu`
+        gameEndMessage.innerText = `${xTurn ? `${players[0].value}` : `${players[1].value}`} Venceu`
     }
 
     gameEndElement.classList.add('show')
@@ -101,4 +114,15 @@ function endGame(draw){
 
 }
 
-starGame();
+
+function validatePlayers() {
+    let validade = true
+    players.forEach(player => {
+        if (player.value === '') {
+            validade = false;
+        }
+    });
+
+    return validade;
+}
+// starGame();
