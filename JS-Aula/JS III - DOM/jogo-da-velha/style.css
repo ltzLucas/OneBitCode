@@ -170,22 +170,25 @@ main.end {
     font-size: small;
 }
 
+
+.names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .players {
     background-color: #353542;
     color: #fff;
     padding: 1rem;
     border-radius: 1rem;
+    width: 10rem;
 }
 
-.names {
-    width: 13rem;
-}
-.flex{
-    display: flex;
-    justify-content: center;
-}
 
-.flex > button{
+
+.names > button{
+    width: 6rem;
     background-color: #353542 ;
     border-radius: 1rem;
     padding: .5rem;
