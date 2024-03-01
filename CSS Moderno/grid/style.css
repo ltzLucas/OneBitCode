@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkgray;
+}
+
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 10px 15px;
+    grid-auto-rows: minmax(210px , auto);
+    margin: 1rem;
+}
+
+.item{
+    background-color: #FFF;
+    border: 1px solid #000;
+    font-size: 30px;
+    padding: 10px;
+    overflow: hidden;
+}
+.item1{
+    grid-column: 1/5;
+}
+
+.item2{
+    grid-column: 1/4;
+}
+
+.item5{
+    grid-column: 2/5;
+}
+.item6{
+    grid-column: 1/4;
+    grid-row: 4/6;
+}
+.item8{
+    grid-column: 4/5;
+}
+.item9{
+    grid-column: 1/5;
+}

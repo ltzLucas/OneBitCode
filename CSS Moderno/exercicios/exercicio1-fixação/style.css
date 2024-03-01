@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #000;
+    height: 6rem;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    
+}
+
+.img-icon{
+    width: 3.5rem;
+    position: absolute;
+    left: 2%;
+}
+.img-logo{
+    width: 12rem;
+    justify-content: center;
+    position: absolute;
+    left: 45%;
+}
+
+header > p {
+    border: 2px solid #FFF;
+    border-radius: 15px;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
