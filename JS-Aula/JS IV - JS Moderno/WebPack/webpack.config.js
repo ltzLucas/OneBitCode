@@ -2,12 +2,18 @@ const path = require('path')
 
 module.exports = {
     entry: {
-        main: './src/index.js',
-        hello: './src/hello.js'
+        main: './src/index.js'
+      
     },
     mode: 'development',
     output: {
         path: path.resolve(__dirname, 'public'),
-        filename: 'bundle.[name].min.js'
+        filename: 'bundle.min.js'
+    },
+    module:{
+        rules: [{
+            test: /\.css$/,
+            use: ['style-loader','css-loader']
+        }]
     }
 }
