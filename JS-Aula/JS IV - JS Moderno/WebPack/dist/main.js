@@ -19,13 +19,25 @@ eval("!function(t,e){ true?module.exports=e():0}(this,(function(){\"use strict\"
 
 /***/ }),
 
+/***/ "./src/styles/index.css":
+/*!******************************!*\
+  !*** ./src/styles/index.css ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack/./src/styles/index.css?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("const dayjs = __webpack_require__(/*! dayjs */ \"./node_modules/dayjs/dayjs.min.js\")\r\n\r\nalert(`Hoje é: ${dayjs().format(\"DD/MM/YYYY\")}` )\n\n//# sourceURL=webpack://webpack/./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/index.css */ \"./src/styles/index.css\");\nconst dayjs = __webpack_require__(/*! dayjs */ \"./node_modules/dayjs/dayjs.min.js\")\r\n;\r\n\r\nalert(`Hoje é: ${dayjs().format(\"DD/MM/YYYY\")}` ) \n\n//# sourceURL=webpack://webpack/./src/index.js?");
 
 /***/ })
 
@@ -54,6 +66,18 @@ eval("const dayjs = __webpack_require__(/*! dayjs */ \"./node_modules/dayjs/dayj
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
 /******/ 	
 /************************************************************************/
 /******/ 	
