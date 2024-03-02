@@ -6,7 +6,7 @@ class User {
     }
 
     login(email,password) {
-        if(this.email == email && this.password == password) {
+        if(this.email === email && this.password === password) {
             console.log('Login Successful')
         }else{
             console.log('Incorrect email or password')
