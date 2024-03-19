@@ -1,4 +1,4 @@
-modelue.exports = class Transfer{
+module.exports = class Transfer{
     constructor(fromUser,toUser,value){
         this.fromUser = fromUser
         this.toUser = toUser
