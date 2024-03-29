@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    height: 100vh; /*Garante com que a main esteja centralizada*/
+    background-color: #0C0B10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: #222127;
+    width: 70rem;
+    height: 40rem;
+    border-radius: 2rem;
+}
+h1{
+    font-weight: 700;
+    color: #fff;
+    margin: 1rem 2.5rem;
+    font-size: 1.5rem;
+}
+
+.section-cards{
+    height: 25%;
+}
+ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none; /* Remove as bolinhas */
+}
+
+.cards{
+    background-color: #1B1A1F;
+    width: 13rem;
+    border-radius: 15px;
+    padding: 1rem;
+    cursor: pointer;
+    box-shadow: 0.7rem 2rem 1.5rem rgba(0, 0, 0, 0.2); /* Adicione a sombra aqui */
+}
+
+.balance{
+    border: 2px solid #E5A855;
+}
+.received{
+    border: 2px solid #22AD9A;
+}
+.spent{
+    border: 2px solid #C46A61;
+}
+
+.cards > img{
+    width: 50px;
+    height: 50px;
+}
+
+.cards-ammount{
+    color: #fff;
+    margin-left: .5rem;
+    font-size: 25px;
+}
+.cards-description{
+    color: #5A5A5C;
+    margin-left: .5rem;
+}
+
+.imgHistoric{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.imgHistoricGreen{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+tr {
+    color: #fff;
+}
+
+td{
+    word-wrap: break-word; /* Quebra as palavras quando atingem o limite da célula */
+}
+table{
+    margin: 1rem 2.5rem;
+}
+.historic-img{
+    width: 4rem;
+    max-width: 4rem;
+}
+.historic-title{
+    width: 16rem;
+    max-width: 16rem;
+}
+.historic-date{
+    width: 8rem;
+    max-width: 8rem;
+}
+.historic-ammount-green{
+    width: 8rem;
+    max-width: 8rem;
+    color: #22AD9A;
+}
+.historic-ammount-red{
+    width: 8rem;
+    max-width: 8rem;
+    color: #C46A61;
+}
+.historic-img{
+    width: 35px;
+}

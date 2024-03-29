@@ -1,0 +1,28 @@
+{
+    "transactions":[
+        {
+            "id": 1,
+            "name": "Freela",
+            "date": "28/03/24",
+            "ammount":300
+        },
+        {
+            "id": 2,
+            "name": "Salário",
+            "date": "28/03/24",
+            "ammount":1500
+        },
+        {
+            "id": 3,
+            "name": "Faculdade",
+            "date": "28/03/24",
+            "ammount":-1700
+        },
+        {
+            "id": 4,
+            "name": "Academia",
+            "date": "28/03/24",
+            "ammount":-151
+        }
+    ]
+}
