@@ -78,6 +78,15 @@ ul{
     height: 35px;
     cursor: pointer;
 }
+.section-historic{
+    display: flex;
+}
+.section-table{
+    max-height: 20rem;
+    max-width: 43rem;
+    overflow-y: scroll;
+}
+
 tr {
     color: #fff;
 }
@@ -112,4 +121,35 @@ table{
 }
 .historic-img{
     width: 35px;
+}
+
+/* FORM */
+form{
+    margin:  0 2rem;
+}
+label{
+    color: #FFF;
+}
+input{
+    background-color: #1B1A1F;
+    color: #FFF;
+    width: 10rem;
+    border-radius: 5px;
+    border: 1px solid #22AD9A;
+    padding: .2rem;
+}
+.save{
+    margin-top: 1.5rem;
+    background-color: #1B1A1F;
+    color: #FFF;
+    width: 10.5rem;
+    border-radius: 5px;
+    border: 1px solid #22AD9A;
+    padding: .2rem;
+    cursor: pointer;
+}
+
+/* Estilizando o ícone do tipo de data em navegadores WebKit */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Inverte as cores da imagem */
 }

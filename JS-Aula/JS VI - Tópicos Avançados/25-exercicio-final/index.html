@@ -16,37 +16,54 @@
             <ul>
                 <li class="cards balance">
                     <img src="img/imgTotalBalance.png" alt="">
-                    <h2 class="cards-ammount" id="cards-total-balance">3000</h2>
+                    <h2 class="cards-ammount" id="cards-total-balance"></h2>
                     <p class="cards-description">Total balance</p>
                 </li>
                 <li class="cards received" >
                     <img src="img/imgTotalReceived.png" alt="">
-                    <h2 class="cards-ammount" id="cards-total-received">3000</h2>
+                    <h2 class="cards-ammount" id="cards-total-received"></h2>
                     <p class="cards-description">Total received</p>
                 </li>
                 <li class="cards spent">
                     <img src="img/imgTotalSpent.png" alt="">
-                    <h2 class="cards-ammount" id="cards-total-spent">3000</h2>
+                    <h2 class="cards-ammount" id="cards-total-spent"></h2>
                     <p class="cards-description">Total spent</p>
                 </li>
             </ul>
         </section>
         <h1>Historic</h1>
         <section class="section-historic">
-            <table>
-                <tbody id="body-historic">
-                    <!-- <tr>
-                        <td class="historic-img"><img src="img/imgTotalReceived.png" alt="" class="imgHistoricGreen"></td>
-                        <td class="historic-title" id="historic-title">Salário</td>
-                        <td class="historic-date" id="historic-date">28/03/24</td>
-                        <td class="historic-ammount" id="historic-ammount">+3500</td>
-                        <td class="historic-img"><img src="img/Edit.png" alt="" class="imgHistoric"></td>
-                        <td class="historic-img"><img src="img/Delete.png" alt="" class="imgHistoric"></td>
-                    </tr> -->
-             
-                </tbody>
-            </table>
-            
+            <div class="section-table">
+                <table>
+                    <tbody id="body-historic">
+                        <!-- <tr>
+                            <td class="historic-img"><img src="img/imgTotalReceived.png" alt="" class="imgHistoricGreen"></td>
+                            <td class="historic-title" id="historic-title">Salário</td>
+                            <td class="historic-date" id="historic-date">28/03/24</td>
+                            <td class="historic-ammount" id="historic-ammount">+3500</td>
+                            <td class="historic-img"><img src="img/Edit.png" alt="" class="imgHistoric"></td>
+                            <td class="historic-img"><img src="img/Delete.png" alt="" class="imgHistoric"></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        <section class="section-form">
+            <form>
+                <label for="name">Description:</label>
+                <br>
+                <input type="text" name="name" id="name">
+                <br>
+                <label for="date">Date:</label>
+                <br>
+                <input type="date" name="date" id="date">
+                <br>
+                <label for="ammount">Ammount</label>
+                <br>
+                <input type="number" name="ammount" id="ammount">
+                <br>
+                <button class="save">Save</button>
+            </form>
+        </section>
         </section>
     </main>
 </body>

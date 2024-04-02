@@ -33,7 +33,6 @@ function renderFinance(financeData) {
     }else{
         td4.id = 'historic-ammount-red';
         td4.classList.add('historic-ammount-red');
-
     }
 
     // Criando a quinta célula da tabela
@@ -60,15 +59,72 @@ function renderFinance(financeData) {
 
     document.querySelector('#body-historic').appendChild(tr);
 }
+function insertValuesInCards(ammounts){
+    let totalBalance = 0
+    let totalReceived = 0
+    let totalSpent = 0
+    ammounts.forEach((ammount) =>{
+        if(ammount >= 0){
+            totalReceived += ammount
+        }else{
+            totalSpent += ammount
+        }
+    })
+
+    totalBalance = totalReceived + totalSpent
+
+    const cardsTotalBalance = document.getElementById('cards-total-balance')
+    cardsTotalBalance.textContent = totalBalance
+
+    const cardsTotalReceived = document.getElementById('cards-total-received')
+    cardsTotalReceived.textContent = totalReceived
+
+    const cardsTotalSpent = document.getElementById('cards-total-spent')
+    cardsTotalSpent.textContent = totalSpent
+}
+
+
 
 
 async function fetchFinances(){
     const finances = await fetch('http://localhost:3000/transactions').then(res => res.json())
-
     finances.forEach(renderFinance)
+}
+
+async function fetchAmmouts(){
+    const finances = await fetch('http://localhost:3000/transactions').then(res => res.json())
+    const ammounts = finances.map(finance => finance.ammount);
+    insertValuesInCards(ammounts)
 }
 
 
 document.addEventListener('DOMContentLoaded', () =>{
     fetchFinances()
+    fetchAmmouts()
+})
+
+const form = document.querySelector('form')
+
+form.addEventListener('submit', async (ev) => {
+    ev.preventDefault()
+
+    const financeData = {
+        name: document.querySelector('#name').value,
+        date: document.querySelector('#date').value,
+        ammount: parseFloat(document.querySelector('#ammount').value)
+    }
+
+    const response = await fetch('http://localhost:3000/transactions',{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(financeData)
+    })
+
+    const savedFinance = await response.json()
+
+    form.reset()
+    renderFinance(savedFinance)
+    fetchAmmouts()
 })
