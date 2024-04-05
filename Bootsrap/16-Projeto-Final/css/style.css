@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;514&display=swap");
+* {
+  color: #fff;
+}
+
+.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  font-size: 12px;
+  font-weight: bold;
+}
+.header a {
+  color: #fff;
+}
+.header #navItem:hover {
+  color: #b9b9b9;
+}
+
+.navBarLogo {
+  width: 240px;
+  margin-right: 30px;
+}
+
+#button {
+  padding: 15px 35px;
+}
+
+.footer {
+  background-color: black;
+  height: 15vh;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer a:hover {
+  color: #b9b9b9;
+}
+.footer .copyLucas {
+  color: #555252;
+}
+
+@media (max-width: 405px) {
+  .navBarLogo {
+    width: 180px;
+    margin-top: 15px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .navBarLogo {
+    width: 150px;
+    margin-top: 15px;
+  }
+}
+.arrowDown {
+  display: inline-block;
+  width: 90px;
+  margin-top: 5px;
+}
+
+.container00.container01 {
+  background-image: url(../img/home/01.jpg);
+}
+.container00.container02 {
+  background-image: url(../img/home/03.jpg);
+}
+.container00.container03 {
+  background-image: url(../img/home/02.gif);
+}
+.container00.container04 {
+  background-image: url(../img/home/04.jpg);
+}
+
+.titlePadding {
+  padding-top: 200px;
+}
+
+.shortTitle {
+  width: 550px;
+}
+
+.mediumTitle {
+  width: 650px;
+}
+
+@media (max-width: 750px) {
+  .titlePadding {
+    padding-top: 120px;
+  }
+  .shortTitle,
+  .mediumTitle {
+    width: auto;
+    font-size: 40px;
+  }
+}
+@media (max-width: 405px) {
+  .shortTitle,
+  .mediumTitle {
+    width: auto;
+    font-size: 30px;
+  }
+}
+.container00.f-container01 {
+  background-image: url("../img/falcon9/01.jpg");
+}
+.container00.f-container02 {
+  background-image: url("../img/falcon9/02.jpg");
+}
+.container00.f-container03 {
+  background-image: url("../img/falcon9/03.jpg");
+}
+.container00.f-container04 {
+  background-image: url("../img/falcon9/08.jpg");
+}
+.container00.f-container05 {
+  background-image: url("../img/falcon9/09.jpg");
+}
+.container00.f-container06 {
+  background-color: black;
+}
+
+.container1 {
+  padding-top: 200px;
+}
+
+.titleFalcon9 {
+  font-size: 90px;
+  font-weight: bolder;
+}
+
+.list {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.titleNumb {
+  font-size: 90px;
+}
+
+.numbers {
+  background-color: black;
+  padding: 4rem;
+}
+
+.containerFalcon9Desc {
+  padding-top: 150px;
+}
+.containerFalcon9Desc .falcon9Desc {
+  width: 700px;
+  font-size: 23px;
+  line-height: 2;
+}
+
+.container00 td {
+  width: 240px;
+}
+.container00.carrossel01 {
+  padding-left: 200px;
+  padding-top: 250px;
+  background-image: url(../img/falcon9/03.jpg);
+}
+.container00.carrossel02 {
+  padding-left: 200px;
+  padding-top: 250px;
+  background-image: url(../img/falcon9/04.jpg);
+}
+.container00.carrossel02 .description {
+  width: 500px;
+}
+.container00.carrossel03 {
+  padding-left: 200px;
+  padding-top: 250px;
+  background-image: url(../img/falcon9/05.jpg);
+}
+.container00.carrossel03 .description {
+  width: 500px;
+}
+.container00.carrossel04 {
+  padding-left: 200px;
+  padding-top: 250px;
+  background-image: url(../img/falcon9/06.jpg);
+}
+.container00.carrossel04 .description {
+  width: 500px;
+}
+.container00.carrossel05 {
+  padding-left: 200px;
+  padding-top: 250px;
+  background-image: url(../img/falcon9/07.jpg);
+}
+.container00.carrossel05 .description {
+  width: 500px;
+}
+
+/*# sourceMappingURL=style.css.map */
