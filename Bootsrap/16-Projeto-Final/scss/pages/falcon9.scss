@@ -55,15 +55,11 @@
 }
 
 .container00{
-
-    td{
-        width: 240px;
-    }
-
     &.carrossel01{
         padding-left: 200px;
         padding-top: 250px;
         background-image: url(../img/falcon9/03.jpg);
+        
     }
     &.carrossel02{
         padding-left: 200px;
@@ -97,5 +93,52 @@
             width: 500px;
         }
     }
+    &.carrossel06{
+        background-image: url(../img/falcon9/09.jpg);
+    }
+    &.carrossel07{
+        background-image: url(../img/falcon9/10.jpg);
+    }
+    &.carrossel08{
+        background-image: url(../img/falcon9/11.jpg);
+    }
+    &.carrossel09{
+        background-image: url(../img/falcon9/12.jpg);
+    }
+    &.carrossel10{
+        background-image: url(../img/falcon9/13.jpg);
+    }
+    &.carrossel11{
+        background-image: url(../img/falcon9/14.jpg);
+    }
     
 }
+
+#widthTable{
+    width: 500px;
+    td{
+        padding: 10px;
+        background-color: transparent;
+        color: #fff;
+    }
+}
+
+.merlinTextContainer{
+    padding-left: 100px;
+    padding-top: 250px;
+    .description{
+        width: 500px;
+    } 
+}
+
+.descriptionCarousel{
+    background-color: black;
+}
+
+.grayText{
+    color: $copy-color;
+}
+.infoContato{
+    padding-top: 270px;
+}
+

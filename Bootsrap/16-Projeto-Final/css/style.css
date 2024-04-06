@@ -166,9 +166,6 @@
   line-height: 2;
 }
 
-.container00 td {
-  width: 240px;
-}
 .container00.carrossel01 {
   padding-left: 200px;
   padding-top: 250px;
@@ -205,6 +202,53 @@
 }
 .container00.carrossel05 .description {
   width: 500px;
+}
+.container00.carrossel06 {
+  background-image: url(../img/falcon9/09.jpg);
+}
+.container00.carrossel07 {
+  background-image: url(../img/falcon9/10.jpg);
+}
+.container00.carrossel08 {
+  background-image: url(../img/falcon9/11.jpg);
+}
+.container00.carrossel09 {
+  background-image: url(../img/falcon9/12.jpg);
+}
+.container00.carrossel10 {
+  background-image: url(../img/falcon9/13.jpg);
+}
+.container00.carrossel11 {
+  background-image: url(../img/falcon9/14.jpg);
+}
+
+#widthTable {
+  width: 500px;
+}
+#widthTable td {
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+}
+
+.merlinTextContainer {
+  padding-left: 100px;
+  padding-top: 250px;
+}
+.merlinTextContainer .description {
+  width: 500px;
+}
+
+.descriptionCarousel {
+  background-color: black;
+}
+
+.grayText {
+  color: #555252;
+}
+
+.infoContato {
+  padding-top: 270px;
 }
 
 /*# sourceMappingURL=style.css.map */
