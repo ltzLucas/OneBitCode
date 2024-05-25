@@ -1,0 +1,25 @@
+.container{
+    background-color: #D7E1E7;
+    border-radius: 1rem;
+    display: flex;
+    gap: 4rem;
+    width: 70rem;
+    margin: 2rem auto;
+    padding: 4rem;
+    height: 30rem;
+}
+
+.poster{
+    border: 8px solid #000;
+    box-shadow: 0 24px 32px -16px rgba(0, 0, 2, 1);
+}
+
+.container h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.container p{
+    margin-top: 2rem;
+    font-size: 1rem;
+}
