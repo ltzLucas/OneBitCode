@@ -1,0 +1,1 @@
+export const Subtitle = () => <h2> 1 + 1 = {1 + 1}</h2>

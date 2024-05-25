@@ -1,16 +1,15 @@
-function sum(a , b){
-  return a + b
-}
+import Title from './components/Title'
+import { Subtitle }  from './components/Subtitle'
+import StatusText from './components/StatusText'
+
 
 
 export default function App(){
-const tech = "React"
-
-
   return (
     <div>
-      <h1>{tech} is awesome!</h1>
-      <h3> Usando função:  {sum(1, 3)}</h3>
+      <Title/>
+      <Subtitle />
+      <StatusText />
     </div>
   )
 }
