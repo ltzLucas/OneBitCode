@@ -1,0 +1,12 @@
+.content{
+    background-color: #fff;
+    width: 25rem;
+    height: 40rem;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
