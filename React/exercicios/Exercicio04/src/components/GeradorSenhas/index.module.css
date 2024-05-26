@@ -14,3 +14,13 @@ button{
     border-radius: 5px;
     cursor: pointer;
 }
+
+input{
+    margin: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}

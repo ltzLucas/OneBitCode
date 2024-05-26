@@ -4,13 +4,14 @@ import  style from "./index.module.css"
 export default function GeradorSenhas  (){
     const [password ,setPassword] = useState("")
     const [copyText, setCopyText] = useState("Copiar")
+    const [passwordSize, setPasswordSize] = useState(12)
 
     function generate() {
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
         let newPassword = '';
         const charactersLength = characters.length;
         
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < passwordSize; i++) {
             newPassword += characters.charAt(Math.floor(Math.random() * charactersLength));
         }
         setCopyText("Copiar")
@@ -27,9 +28,21 @@ export default function GeradorSenhas  (){
         <>
             <div className={style.content}>
                 <h1>Gerador de Senhas</h1>
+
+                <div>
+                    <label htmlFor="passwordSize">Tamanho: </label>
+                    <input 
+                        type="number" 
+                        id="passwordSize" 
+                        min={1} 
+                        value={passwordSize}
+                        onChange={(ev) => setPasswordSize(ev.target.value)}
+                    />
+
+                </div>
                 <button
                     onClick={generate}
-                >Gerar!</button>
+                >Gerar senha de {passwordSize} caracteres!</button>
                 <button
                     onClick={copyToClipboard}
                 >{copyText}</button>
