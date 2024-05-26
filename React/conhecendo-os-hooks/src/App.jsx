@@ -8,7 +8,6 @@ import userCounter from './hooks/useCounter'
 function App() {
 
   const counter = userCounter()
-  let someState
 
   
 

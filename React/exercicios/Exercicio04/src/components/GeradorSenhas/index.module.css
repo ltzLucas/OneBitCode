@@ -1,0 +1,16 @@
+.content{
+    display: flexbox;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
