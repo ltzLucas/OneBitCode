@@ -10,3 +10,12 @@
     padding: 20px;
 }
 
+.followBtn{
+    margin-left: 1rem;
+    padding: .125rem  .5rem;
+    background-color: rgb(31, 224, 224);
+    border: 0;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+

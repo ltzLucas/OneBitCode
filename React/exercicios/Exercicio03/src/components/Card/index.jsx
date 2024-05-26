@@ -1,3 +1,4 @@
+import { useState } from "react"
 import imgUser from "../../assets/imgUser.jpeg"
 import Btn from "../Btn"
 import Description from "../Description"
@@ -6,11 +7,26 @@ import style from "./index.module.css"
 
 export default function Card(props){
 
+    const [followText, setFollowText] = useState("Follow")
+
+
+    function handleClick(ev){
+        alert("Agora vc está seguindo")
+        setFollowText("Following")
+    }
+
     return (
         <div className={style.content}>
 
             <img style={{height:"150px" ,borderRadius:"50px"}} src={imgUser} alt={imgUser} />
-            <Title title="Lucas Lima" />
+            <Title title="Lucas Lima">
+                <button
+                    className={style.followBtn}
+                    onClick={handleClick}
+                >
+                    {followText}
+                </button>
+            </Title>
             <hr />
             <Description description="Full-stack JavaScript Developer" />
             <hr />
@@ -22,7 +38,7 @@ export default function Card(props){
             <br />
             <Btn title="Linkedin" />
             <br />
-            <Btn title="Twitter" />
+            <Btn title="Twitter"/>
         </div>
 
     )
