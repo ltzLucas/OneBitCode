@@ -1,10 +1,12 @@
 import { useState } from "react"
 import  style from "./index.module.css"
+import Input from "../Input";
 
 export default function GeradorSenhas  (){
     const [password ,setPassword] = useState("")
     const [copyText, setCopyText] = useState("Copiar")
     const [passwordSize, setPasswordSize] = useState(12)
+
 
     function generate() {
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -31,13 +33,7 @@ export default function GeradorSenhas  (){
 
                 <div>
                     <label htmlFor="passwordSize">Tamanho: </label>
-                    <input 
-                        type="number" 
-                        id="passwordSize" 
-                        min={1} 
-                        value={passwordSize}
-                        onChange={(ev) => setPasswordSize(ev.target.value)}
-                    />
+                    <Input passwordSize={passwordSize} setPasswordSize={setPasswordSize}/>
 
                 </div>
                 <button
